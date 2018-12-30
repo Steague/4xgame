@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Custom boilerplate Edition
+
+This repo comes with Redux and SASS. Additionally, some very simple examples have been included to help kick things off. This may end up very outdated and using it is at your own risk.
+
 ## Available Scripts
 
 In the project directory, you can run:

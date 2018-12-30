@@ -1,0 +1,94 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "globals": {
+        "ga": true,
+        "mapboxgl": true,
+        "turf": true,
+        "describe": true,
+        "it": true,
+        "expect": true,
+        "sinon": true,
+        "google": true,
+        "mixpanel": true,
+        "GA_TRACKING_ID": true,
+        "MAPBOX_ACCESS_TOKEN": true,
+        "LOG_LEVEL": true,
+        "SERVER_URL": true,
+        "AUTH_URL": true,
+        "AUTH_REALM_NAME": true,
+        "AUTH_CLIENT_ID": true,
+        "MIXPANEL_APIKEY": true,
+        "CAMPAIGN_MANAGEMENT": true
+
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:flowtype/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "flowtype"
+    ],
+    "settings": {
+         "react": {
+            "createClass": "createClass", // Regex for Component Factory to use, default to "createClass"
+            "pragma": "React",  // Pragma to use, default to "React"
+            "version": "15.0" // React version, default to the latest React stable release
+        }
+    },
+    "rules": {
+        "no-var": [
+            "error"
+        ],
+        "no-trailing-spaces": 2,
+        "indent": [
+            "error",
+            4,
+            { "SwitchCase": 1 }
+        ],
+        "key-spacing": [2, {
+            "singleLine": {
+                "beforeColon": true,
+                "afterColon": true
+            },
+            "multiLine": {
+                "beforeColon": true,
+                "afterColon": true,
+                "align": "colon"
+            }
+        }],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "react/no-deprecated": "error",
+        "flowtype/space-before-type-colon": "off",
+        "flowtype/space-after-type-colon": "off",
+        "flowtype/union-intersection-spacing": "error",
+        "flowtype/semi": "error",
+        "flowtype/delimiter-dangle": "off",
+        "flowtype/no-dupe-keys": "error",
+        "flowtype/valid-syntax": "error"
+    }
+}
